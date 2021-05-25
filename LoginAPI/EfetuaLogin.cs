@@ -15,7 +15,7 @@ namespace LoginAPI
 
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri("http://45.132.242.97:5000");
+                    client.BaseAddress = new Uri("suaUrl");
                     client.DefaultRequestHeaders.Accept.Clear();
 
                     var response = client.PostAsync(
